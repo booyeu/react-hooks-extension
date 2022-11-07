@@ -1,0 +1,27 @@
+{
+  "name": "react-hooks-extension",
+  "version": "0.0.1",
+  "description": "The extension of react hooks",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BooYeu/react-hooks-extension.git"
+  },
+  "keywords": [
+    "react",
+    "react-hooks",
+    "react-hooks-extension"
+  ],
+  "author": "BooYeu - llr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BooYeu/react-hooks-extension/issues"
+  },
+  "homepage": "https://github.com/BooYeu/react-hooks-extension#readme",
+  "devDependencies": {
+    "react": "*"
+  },
+  "peerDependencies": {
+    "react": "*"
+  }
+}
