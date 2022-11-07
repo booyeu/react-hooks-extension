@@ -1,6 +1,6 @@
 {
   "name": "react-hooks-extension",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The extension of react hooks",
   "main": "index.js",
   "repository": {
