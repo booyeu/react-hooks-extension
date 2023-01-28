@@ -21,6 +21,9 @@
   "scripts": {
     "build": "tsup index.ts --dts"
   },
+  "files": [
+    "dist/**"
+  ],
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
