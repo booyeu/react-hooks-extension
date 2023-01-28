@@ -1,6 +1,6 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 
-export default function (initialValue, delay = 2000) {
+export default function (initialValue: any, delay = 2000) {
   const [state, setState] = useState(initialValue);
   const [delayState, setDelayState] = useState(initialValue);
   useEffect(() => {

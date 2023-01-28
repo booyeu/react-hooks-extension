@@ -1,6 +1,6 @@
 {
   "name": "react-hooks-extension",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The extension of react hooks",
   "main": "index.js",
   "repository": {
@@ -18,8 +18,21 @@
     "url": "https://github.com/BooYeu/react-hooks-extension/issues"
   },
   "homepage": "https://github.com/BooYeu/react-hooks-extension#readme",
+  "scripts": {
+    "build": "tsup index.ts --dts"
+  },
   "devDependencies": {
-    "react": "*"
+    "@types/react": "^18.0.27",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "8.22",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.1",
+    "prettier": "^2.8.3",
+    "react": "*",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.4"
   },
   "peerDependencies": {
     "react": "*"

@@ -1,9 +1,9 @@
-import {useCallback, useRef} from 'react';
+import { useCallback, useRef } from 'react';
 
-export default function (fn, delay = 2000, normalFn) {
-  const timer = useRef();
+export default function (fn: Function, delay = 2000, normalFn: Function) {
+  const timer = useRef<number>();
   return useCallback(
-    params => {
+    (params: any) => {
       normalFn?.(params);
       timer.current && clearTimeout(timer.current);
       timer.current = setTimeout(() => fn(params), delay);
