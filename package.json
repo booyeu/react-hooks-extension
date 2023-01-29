@@ -1,8 +1,10 @@
 {
   "name": "react-hooks-extension",
-  "version": "0.0.3",
+  "version": "0.0.4",
+  "type": "module",
   "description": "The extension of react hooks",
-  "main": "index.js",
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BooYeu/react-hooks-extension.git"
@@ -19,7 +21,7 @@
   },
   "homepage": "https://github.com/BooYeu/react-hooks-extension#readme",
   "scripts": {
-    "build": "tsup index.ts --dts"
+    "build": "tsup index.ts --dts --clean"
   },
   "files": [
     "dist/**"
