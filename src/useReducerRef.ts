@@ -8,5 +8,5 @@ export default function <R extends Reducer<any, any>>(reducer: R, initialValue?:
     ref.current = reducerRef.current(ref.current, action);
     setState(ref.current);
   }, []);
-  return [state, dispatch, ref];
+  return [state, dispatch, ref] as const;
 }

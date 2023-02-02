@@ -7,5 +7,5 @@ export default function <T>(initialValue?: T) {
     ref.current = val;
     setState(val);
   }, []);
-  return [state, set, ref];
+  return [state, set, ref] as const;
 }

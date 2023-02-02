@@ -9,5 +9,5 @@ export default function <S>(initialValue?: S, delay = 2000) {
     }, delay);
     return () => clearTimeout(timer);
   }, [delay, state]);
-  return [state, setState, delayState, setDelayState];
+  return [state, setState, delayState, setDelayState] as const;
 }
