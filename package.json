@@ -3,7 +3,7 @@
   "version": "0.0.6",
   "type": "module",
   "description": "The extension of react hooks",
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/BooYeu/react-hooks-extension#readme",
   "scripts": {
-    "build": "tsup index.ts --dts --clean"
+    "build": "tsup index.ts --dts --clean --format esm"
   },
   "files": [
     "dist/**"
