@@ -1,6 +1,6 @@
 import { useCallback, useRef, useState, Reducer, ReducerState } from 'react';
 
-export default function <R extends Reducer<any, any>>(reducer: R, initialValue?: ReducerState<R>) {
+export default function <R extends Reducer<any, any>>(reducer: R, initialValue: ReducerState<R>) {
   const [state, setState] = useState(initialValue);
   const ref = useRef(initialValue);
   const reducerRef = useRef(reducer);

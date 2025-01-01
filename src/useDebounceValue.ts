@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 
-export default function <T>(value?: T, delay = 0) {
+function useDebounceValue<T>(value: T | (() => T), delay?: number): T;
+function useDebounceValue<T = undefined>(value: undefined, delay?: number): T | undefined;
+
+function useDebounceValue<T>(value?: T, delay = 0) {
   const [cur, setCur] = useState(value);
   const timerRef = useRef<number | null>(null);
   useEffect(() => {
@@ -12,3 +15,5 @@ export default function <T>(value?: T, delay = 0) {
 
   return cur;
 }
+
+export default useDebounceValue;
